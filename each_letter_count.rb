@@ -5,3 +5,22 @@
 # Look in the github README file for example output
 
 p "Enter a word:"
+answer = gets.chomp.split("")
+
+answer.each do |letter|
+  counts = answer.count(letter)
+  
+    puts "#{letter} appears #{counts} times"
+    
+end
+
+
+
+# ("a".."z").each do |letter|
+#   counts = answer.count(letter)
+#   if counts != 0
+#     puts "#{letter} appears #{counts} times"
+    
+#   end
+
+# end
